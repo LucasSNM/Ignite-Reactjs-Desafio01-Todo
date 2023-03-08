@@ -93,32 +93,32 @@ export function App() {
       <header className="flex justify-center h-60 bg-zinc-900">
         <img src={todoLogo} alt="logo" />
       </header>
-      <div className="px-20">
-        <div className="flex w-full -mt-8">
+      <div className="px-2 md:px-20">
+        <div className="flex w-full -mt-8 flex-col md:flex-row gap-2">
           <input
             type="text"
             placeholder="Adicione uma nova tarefa"
-            className="bg-zinc-700 rounded-lg w-full text-gray-400 pl-5 focus-visible:outline-cyan-600 "
+            className="bg-zinc-700 rounded-lg w-full text-gray-400 pl-5 py-4  focus-visible:outline-cyan-600 "
             onChange={() => setTasksText(event.target.value)}
             value={tasksText}
           ></input>
           <button
             onClick={() => handleCreateNewTask()}
-            className="bg-cyan-600 hover:bg-cyan-700 rounded-lg py-4 px-5 w-1/10 ml-2 text-white font-bold flex justify-center items-center gap-1"
+            className="bg-cyan-600 hover:bg-cyan-700 rounded-lg py-4 px-5 w-1/10 text-white font-bold flex justify-center items-center gap-1"
           >
             Criar
             <PlusCircle size="20" weight="bold" />
           </button>
         </div>
-        <div className="h-full mt-20">
+        <div className="h-full mt-10">
           <div className="font-bold flex justify-between mb-5">
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-col md:flex-row">
               <p className="text-cyan-500">Tarefas criadas</p>
               <div className="rounded-full bg-zinc-700 px-2 text-sm text-zinc-100">
                 {tasks.length}
               </div>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-col md:flex-row">
               <p className="text-violet-600">Concluídas</p>
               <div className="rounded-full bg-zinc-700 px-2 text-sm text-zinc-100">
                 {`${tasks.length} de ${finished.length}`}
