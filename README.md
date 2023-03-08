@@ -2,4 +2,4 @@
  Primeiro desafio Ignite Rocketseat - To Do
 
 A solução está hospedada pela plataforma Vercel e pode ser acessada pelo link:
-https://desafio01-q353.vercel.app/
+https://ignitedesafio01.vercel.app/
